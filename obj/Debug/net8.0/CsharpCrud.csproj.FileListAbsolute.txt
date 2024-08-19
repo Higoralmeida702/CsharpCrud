@@ -134,3 +134,4 @@ C:\Users\Higor\source\repos\CsharpCrud\CsharpCrud\obj\Debug\net8.0\refint\Csharp
 C:\Users\Higor\source\repos\CsharpCrud\CsharpCrud\obj\Debug\net8.0\CsharpCrud.pdb
 C:\Users\Higor\source\repos\CsharpCrud\CsharpCrud\obj\Debug\net8.0\CsharpCrud.genruntimeconfig.cache
 C:\Users\Higor\source\repos\CsharpCrud\CsharpCrud\obj\Debug\net8.0\ref\CsharpCrud.dll
+C:\Users\Higor\source\repos\CsharpCrud\CsharpCrud\obj\Debug\net8.0\CsharpCrud.sourcelink.json
