@@ -40,5 +40,17 @@ namespace CsharpCrud.Repository
             _bancoContext.SaveChanges();
             return contatoDb;
         }
+
+        public bool ConfirmarExclusao(int id)
+        {
+            Cliente contatoDb = ListarPorId(id);
+            if (contatoDb == null) throw new System.Exception("Houve um erro na exclusao do cliente");
+
+            _bancoContext.Clientes.Remove(contatoDb);
+            _bancoContext.SaveChanges();
+
+            return true;
+
+        }
     }
 }

@@ -48,9 +48,16 @@ namespace CsharpCrud.Controllers
             }
         }
 
-        public IActionResult Apagar()
+        public IActionResult ConfirmarExclusao(int id)
+            {
+            _clienteRepository.ConfirmarExclusao(id);
+                return RedirectToAction("Index");
+            }
+
+        public IActionResult Apagar(int id)
         {
-            return View();
+            Cliente clientes = _clienteRepository.ListarPorId(id);
+            return View(clientes);
         }
 
     }

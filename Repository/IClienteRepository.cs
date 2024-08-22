@@ -11,5 +11,7 @@ namespace CsharpCrud.Repository
 
         Cliente Adicionar(Cliente cliente);
         Cliente Atualizar(Cliente cliente);
+
+        bool ConfirmarExclusao(int id);
     }
 }
