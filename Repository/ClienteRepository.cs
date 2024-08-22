@@ -22,6 +22,23 @@ namespace CsharpCrud.Repository
             return cliente;
         }
 
-       
+        public Cliente ListarPorId(int id)
+        {
+            return _bancoContext.Clientes.FirstOrDefault(x => x.Id == id);
+        }
+
+        public Cliente Atualizar(Cliente cliente)
+        {
+            Cliente contatoDb = ListarPorId(cliente.Id);
+
+            if (contatoDb == null) throw new System.Exception("Houve um erro na atualização do cliente");
+            contatoDb.Nome = cliente.Nome;
+            contatoDb.Email = cliente.Email;
+            contatoDb.Telefone = cliente.Telefone;
+
+            _bancoContext.Clientes.Update(contatoDb);
+            _bancoContext.SaveChanges();
+            return contatoDb;
+        }
     }
 }

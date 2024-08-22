@@ -33,9 +33,19 @@ namespace CsharpCrud.Controllers
             }
         }
 
-        public IActionResult Editar()
+        public IActionResult Editar(int id)
         {
-            return View();
+            Cliente clientes = _clienteRepository.ListarPorId(id);
+            return View(clientes);
+        }
+
+        [HttpPost]
+        public IActionResult Alterar(Cliente cliente)
+        {
+            {
+                _clienteRepository.Atualizar(cliente);
+                return RedirectToAction("Index");
+            }
         }
 
         public IActionResult Apagar()
