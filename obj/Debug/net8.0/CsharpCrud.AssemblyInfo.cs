@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CsharpCrud")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bee814633621e00797aecd1d2e1a32d7fc4fb7f3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+672780219733f5675708cf700afe8b9ab13bf9e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CsharpCrud")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CsharpCrud")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
